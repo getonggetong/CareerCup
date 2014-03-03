@@ -36,8 +36,6 @@ public class CC4_6{
 			|| ((root.left == n2 || inSubTree(n2, root.left)) && (root.right == n1) || inSubTree(n1, root.right)))
 			return root;
 		
-
-
 		else if(inSubTree(n1, root.left) && inSubTree(n2, root.left)){
 			ancestor = findAncestor(n1, n2, root.left);
 			return ancestor;
@@ -64,7 +62,6 @@ public class CC4_6{
 			isSub = inSubTree(node, root.right);
 		if(isSub)
 			return true;
-
 
 		return isSub;
 	}
